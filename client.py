@@ -26,7 +26,3 @@ while True:
     print(f"{server_name}: {messsage}")
     messsage = input("Я: ")
     socket_server.send(messsage.encode())
-
-    if messsage.upper() == '\q':
-        socket.close()
-        print(f'{name} вышел из чата!!!')
