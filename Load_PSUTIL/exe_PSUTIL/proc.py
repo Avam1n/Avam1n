@@ -5,7 +5,7 @@ class EXE:
     exe_list = []
 
     def _load_exe(self):
-        for i in psutil.process_iter(['exe']):
+        for i in range(len(psutil.process_iter(['exe']))):
             self.exe_list.append(i.info.get('exe'))
 
     def show_info(self):
